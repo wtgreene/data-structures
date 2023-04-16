@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"edu.ncsu.csc316.dsa.tree","l":"LinkedBinaryTree.BinaryTreeNode"},{"p":"edu.ncsu.csc316.dsa.tree","l":"LinkedBinaryTree"}]
