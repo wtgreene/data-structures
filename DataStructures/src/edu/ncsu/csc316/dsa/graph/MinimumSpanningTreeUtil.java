@@ -44,7 +44,7 @@ public class MinimumSpanningTreeUtil {
     public static <V, E extends Weighted> PositionalList<Edge<E>> kruskal(Graph<V, E> g) {
     	
     	PositionalLinkedList<Edge<E>> tList = new PositionalLinkedList<Edge<E>>();
-        AdaptablePriorityQueue<Integer, Edge<E>> pq = new HeapAdaptablePriorityQueue<>();
+        PriorityQueue<Integer, Edge<E>> pq = new HeapPriorityQueue<>();
         DisjointSetForest<Vertex<V>> fSet = new UpTreeDisjointSetForest<Vertex<V>>();
         
         for ( Edge<E> e : g.edges() )
