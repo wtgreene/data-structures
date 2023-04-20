@@ -38,10 +38,6 @@ public class ShortestPathUtil {
      *         graph
      */ 
     public static <V, E extends Weighted> Map<Vertex<V>, Integer> dijkstra(Graph<V, E> graph, Vertex<V> start) {
-        //TODO: complete this method
-        //NOTE: since Dijkstra's algorithm is very similar to Prim-Jarnik's algorithm,
-        //     you should review the provided Prim-Jarnik implementation in the next
-        //     section of the lab on Minimum Spanning Trees
     	
     	AdaptablePriorityQueue<Integer, Vertex<V>> apq = new HeapAdaptablePriorityQueue<Integer, Vertex<V>>();
     	Map<Vertex<V>, Integer> cMap = new LinearProbingHashMap<Vertex<V>, Integer>();
@@ -54,7 +50,7 @@ public class ShortestPathUtil {
     			cMap.put(v, 0);
     		
     		else
-    			cMap.put(v, null);
+    			cMap.put(v, 1000); // infinity?
     		
     		int currentCost = cMap.get(v);
     		Entry<Integer, Vertex<V>> apqEntry = apq.insert(currentCost, v);
